@@ -1,13 +1,12 @@
 /********* Echo.m Cordova Plugin Implementation *******/
 
+#import <UIKit/UIKit.h>
 #import "Safari.h"
 #import <Cordova/CDV.h>
 
-@import UIKit;
-
 @implementation Safari
 
-- (void)echo:(CDVInvokedUrlCommand*)command
+- (void)openExternally:(CDVInvokedUrlCommand*)command
 {
     CDVPluginResult* pluginResult = nil;
     NSString* echo = [command.arguments objectAtIndex:0];

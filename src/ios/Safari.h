@@ -4,7 +4,7 @@
 
 @interface Safari : CDVPlugin
 
-- (void)echo:(CDVInvokedUrlCommand*)command;
+- (void)openExternally:(CDVInvokedUrlCommand*)command;
 
 @end
 
