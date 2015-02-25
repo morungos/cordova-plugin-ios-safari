@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.morungos.cordova.ios.safari" version="0.1.0">
+    <name>Device</name>
+    <description>Cordova iOS Safari Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,safari</keywords>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Safari">
+                <param name="ios-package" value="Safari"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/Safari.h" />
+        <source-file src="src/ios/Safari.m" />
+    </platform>
+</plugin>
