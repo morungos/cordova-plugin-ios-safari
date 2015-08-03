@@ -9,18 +9,20 @@
 
 - (void)openExternally:(CDVInvokedUrlCommand*)command
 {
-    CDVPluginResult* pluginResult = nil;
+    [self.commandDelegate runInBackground:^{
+        CDVPluginResult* pluginResult = nil;
 
-    // --------------------------------------------------------------------------------------------
+        // --------------------------------------------------------------------------------------------
 
-    NSString *str = [command.arguments objectAtIndex:0];
-    NSURL *url = [[NSURL alloc] initWithString:str];
-    [[UIApplication sharedApplication] openURL:url];    
-    
-    // --------------------------------------------------------------------------------------------
+        NSString *str = [command.arguments objectAtIndex:0];
+        NSURL *url = [[NSURL alloc] initWithString:str];
+        [[UIApplication sharedApplication] openURL:url];
 
-    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+        // --------------------------------------------------------------------------------------------
+
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+    }];
 }
 
 @end
