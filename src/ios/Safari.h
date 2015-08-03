@@ -7,4 +7,3 @@
 - (void)openExternally:(CDVInvokedUrlCommand*)command;
 
 @end
-
