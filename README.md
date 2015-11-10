@@ -12,14 +12,3 @@ var success = function(winParam) {};
 var failure = function(error) {};
 cordova.exec(success, failure, "Safari", "openExternally", [url]);
 ```
-
-### Changes
-
-Version 0.1.1
-
- * Added logic to make the plugin use a background thread
-
-Version 0.1.0
-
- * Initial release
- 
