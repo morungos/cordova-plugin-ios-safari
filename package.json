@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-ios-safari",
+  "version": "0.1.2",
+  "description": "Cordova iOS Safari Plugin",
+  "cordova": {
+    "id": "cordova-plugin-ios-safari",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/morungos/cordova-plugin-ios-safari.git"
+  },
+  "keywords": [
+    "cordova",
+    "safari",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Stuart Watt <stuart@morungos.com>",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/morungos/cordova-plugin-ios-safari/issues"
+  },
+  "homepage": "https://github.com/morungos/cordova-plugin-ios-safari#readme"
+}
